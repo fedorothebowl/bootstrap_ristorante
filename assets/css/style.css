@@ -1,0 +1,407 @@
+/*
+
+CSS MAIN STYLE
+0) fonts
+1) general
+2) color
+3) nav
+4) hero
+5) Service
+6) About us
+7) shop
+8) restaurant
+9) Gallery
+10) Page Menu
+11) Footer
+
+Produced by federicoP www.federicopetrucci.it
+*/
+
+
+/* 0) fonts*/
+
+body {
+    font-family: 'Poppins', 'sans serif';
+    background-color: #141313;
+}
+
+.font__poppins-bold {
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+.font__cookie {
+    font-family: 'cookie'!important;
+}
+
+
+/* 1) general*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --red: #990000;
+    --gray: #262626;
+    --orange: #EE8434;
+}
+
+.general_subtitle-h2 {
+    padding-top: 1em;
+    font-size: 5em;
+    border-bottom: 3px solid var(--red);
+}
+
+.general_subtitle-h3 {
+    padding-top: 1em;
+    font-size: 1.5em;
+    border-bottom: 3px solid var(--red);
+}
+
+.general_title-h2 {
+    font-size: 5em;
+    padding-top: 50px
+}
+
+.general_font-size-p {
+    font-size: 1.2em;
+}
+
+.general_container {
+    max-width: 80%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.general_letter-spacing {
+    letter-spacing: 3px;
+}
+
+.general_border-b {
+    border-bottom: 2px solid var(--red);
+}
+
+.button:focus {
+    outline: 0;
+}
+
+
+/* bottone */
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    font-size: 1rem;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 30px;
+    border: none;
+    padding: 10px;
+    width: 250px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.button span:after {
+    content: '\00bb';
+    font-size: 2rem;
+    position: absolute;
+    opacity: 0;
+    top: -14px;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+/* 2) color*/
+
+.bg-red {
+    background: var(--red)!important;
+}
+
+.bg-dark {
+    background: var(--gray)!important;
+}
+
+.bg-orange {
+    background: var(--orange)!important;
+}
+
+.c-rosso {
+    color: var(--red)!important;
+}
+
+.c-scuro {
+    color: var(--gray)!important;
+}
+
+.c-orange {
+    color: var(--orange)!important;
+}
+
+
+/* 3) nav */
+
+.active>a {
+    color: var(--red)!important;
+    font-weight: 600;
+}
+
+.nav_bg {
+    background-size: auto 100%;
+}
+
+.nav_position {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.nav-item>a:hover {
+    color: var(--red)!important;
+}
+
+.outline {
+    outline: 0!important;
+}
+
+
+/* 4) hero*/
+
+.hero_bg-image {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.hero_bg-image2 {
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.hero__positioning-home {
+    position: absolute;
+    top: 30%;
+}
+
+.hero__positioning-h1 {
+    position: absolute;
+    top: 15%;
+}
+
+.hero__positioning-h1-2 {
+    position: absolute;
+    top: 10%;
+}
+
+.hero__h1-size {
+    font-size: 6em;
+}
+
+
+/* 7) shop */
+
+.shop__padding {
+    padding-top: 150px;
+}
+
+.shop__padding-bottom {
+    padding-bottom: 150px;
+}
+
+
+/* 8) restaurant */
+
+.restaurant_padding-h3 {
+    padding-top: 80px;
+}
+
+.rastaurant_margin-div {
+    margin-top: -200px;
+}
+
+
+/* 9) Gallery */
+
+.gallery__margin-b-300 {
+    margin-top: -200px;
+}
+
+#columns {
+    column-width: 320px;
+    column-gap: 15px;
+    width: 100%;
+    max-width: 1300px;
+    margin: 100px auto;
+}
+
+div#columns figure img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid var(--red);
+    padding-bottom: 15px;
+    margin-bottom: 5px;
+}
+
+div#columns figure figcaption {
+    font-size: .9rem;
+    color: white;
+    line-height: 1.5;
+}
+
+div#columns figure {
+    transition: opacity .4s ease-in-out;
+    display: inline-block;
+}
+
+div#columns:hover figure:not(:hover) {
+    opacity: 0.4;
+}
+
+
+/*10) pagina menu*/
+
+.menu__background {
+    border-radius: 10px;
+    margin: 0 0.3%;
+}
+
+.breadcrumb-menu {
+    list-style-type: none;
+}
+
+.breadcrumb-menu li a {
+    color: var(--red);
+    transition: ease-out;
+    transition-duration: 0.3s;
+}
+
+.breadcrumb-item a:hover {
+    color: #fff;
+    transition: ease-out;
+    transition-duration: 0.3s;
+}
+
+
+/*11) footer*/
+
+.svg {
+    fill: white;
+    transition: ease-out;
+    transition-duration: 0.3s;
+}
+
+.svg:hover {
+    fill: var(--red);
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+.svg-social {
+    fill: white;
+    transition: ease-out;
+    transition-duration: 0.3s;
+}
+
+.svg-social:hover {
+    fill: var(--red);
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+    transform: scale(1.5)
+}
+
+.svg-social:hover:after {
+    transition-duration: 1s;
+}
+
+.nav-footer>a:hover {
+    color: var(--red)!important;
+}
+
+.nav-footer>a:hover:after:not(:hover) {
+    transition: opacity .4s ease-out;
+}
+
+
+/* =========================
+QUERY
+==========================*/
+
+@media screen and (min-width: 992px) {
+    .menu__pb {
+        margin-bottom: 30px;
+    }
+    .menu__section_mt {
+        margin-top: 30px;
+    }
+    .menu__section_mb {
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .nav__bottone {
+        margin: 25px 0;
+    }
+    /*menu*/
+    .menu__background {
+        margin: 3% 0.3%;
+    }
+    /*gallery*/
+    #columns {
+        column-gap: 0px;
+    }
+    #columns figure {
+        width: 100%;
+        padding: 0 20px;
+    }
+    div#columns figure figcaption {
+        text-align: center
+    }
+    ;
+}
+
+@media screen and (max-width:768px) {
+    .hero__h1-size {
+        font-size: 3em;
+    }
+    .footer__pt {
+        padding-top: 100px;
+    }
+    .hero_bg-image {
+        height: 100vh;
+    }
+    .hero__positioning-home>img {
+        margin-top: -125px;
+    }
+    footer>div .breadcrumb-item {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    footer>div .breadcrumb-item {
+        font-size: 10px;
+    }
+}
